@@ -10,7 +10,7 @@ This code is a PyTorch implementation of our paper **"DMANet: A Dynamic Multisca
 
 ## Result
 
-![image-20250220204635216](./tutorial/result.png)
+![image-20250220204635216](./tutorial/result2.png)
 
 ## Platform
 
