@@ -4,7 +4,7 @@
 
 This code is a PyTorch implementation of our paper **"DMANet: A Dynamic Multiscale Anti-Aliasing Network for Time Series Forecasting"**.
 
-**[Highlight] This code is the version as of Feb 09, 2025, and the updated code will be released upon acceptance of the paper.** **The latest source code will be released when the paper is accepted.**
+**[Highlight] This code is the version as of May 09, 2025, and the updated code will be released upon acceptance of the paper.** **The latest source code will be released when the paper is accepted.**
 
 ## Overall Architecture
 
