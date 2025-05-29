@@ -131,21 +131,6 @@ class Exp_Long_Term_Forecast(Exp_Basic):
                 dec_inp = torch.zeros_like(batch_y[:, -self.args.pred_len:, :]).float()
                 dec_inp = torch.cat([batch_y[:, :self.args.label_len, :], dec_inp], dim=1).float().to(self.device)
 
-                #  paramters and FLOPs
-                if epoch == i == 0:
-                    print('########################  Paramters and FLOPs  ######################### ')
-                    total_params = sum(p.numel() for p in self.model.parameters())
-                    total_params += sum(p.numel() for p in self.model.buffers())
-                    print(f'{total_params:,} total parameters.')
-                    print(f'{total_params / (1024 * 1024):.2f}M total parameters.')
-                    total_trainable_params = sum(p.numel() for p in self.model.parameters() if p.requires_grad)
-                    print(f'{total_trainable_params:,} training parameters.')
-                    print(f'{total_trainable_params / (1024 * 1024):.2f}M training parameters.')
-                    flops, macs = profile(self.model, inputs=(batch_x, batch_x_mark, dec_inp, batch_y_mark))
-                    flops, macs = clever_format([flops, macs], "%.3f")
-                    print(f"FLOPS: {flops}, MACs: {macs}")
-                    print('####################################################################### ')
-
                 # encoder - decoder
                 if self.args.use_amp:
                     with torch.cuda.amp.autocast():
