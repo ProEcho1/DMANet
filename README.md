@@ -1,6 +1,6 @@
-<div style="text-align: center;">
+<h1 align='center'>
     DMANet: A Dynamic Multiscale Anti-Aliasing Network for Time Series Forecasting
-</div>
+</h1>
 
 This code is a PyTorch implementation of our paper **"DMANet: A Dynamic Multiscale Anti-Aliasing Network for Time Series Forecasting"**.
 
