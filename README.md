@@ -8,7 +8,7 @@ This code is a PyTorch implementation of our paper **"DMANet: A Dynamic Multisca
 
 ## Overall Architecture
 
-![image-20250220204635216](./tutorial/Architecture.png)
+![image-20250220204635216](./tutorial/architecture.png)
 
 ## Result
 
@@ -38,3 +38,4 @@ We greatly appreciate the following GitHub repositories for their valuable code:
 - https://github.com/thuml/Time-Series-Library
 - https://github.com/kwuking/TimeMixer
 - https://github.com/ts-kim/RevIN
+
