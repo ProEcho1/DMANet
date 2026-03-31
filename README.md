@@ -12,7 +12,8 @@ This code is a PyTorch implementation of our paper **"Anti-Aliasing Matters: A D
 
 ## Result
 
-![image-20250220204635216](./tutorial/Result.png)
+![image-20250220204635217](./pic/r1.png)
+![image-20250220204635218](./pic/r2.png)
 
 ## Platform
 
